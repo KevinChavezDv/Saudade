@@ -1,0 +1,122 @@
+#angel{
+    position: absolute;
+    margin-left: 1150px;
+    width: 230px;
+}
+
+#angel2{
+    position: absolute;
+   
+    width: 230px;
+    margin-top: -1000px;
+    margin-right: 10px;
+    
+     transform: scaleX(-1);
+    
+}
+
+#logo{
+    width: 500px;
+    position: absolute;
+    z-index: -1;
+}
+#insta{
+    width: 60px;
+    
+}
+
+#face{
+    width: 45px;
+    
+}
+
+#wasa{
+    width: 58px;
+    
+}
+
+#popup {
+    top: 50%; /* Centra el pop-up verticalmente */
+    left: 50%; /* Centra el pop-up horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición del pop-up para que esté centrado exactamente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    line-height: 1.6;
+    color: #rgb(175, 105, 205, 0.2);
+    background-color: rgb(175, 105, 205, 0.2);
+    border-radius: 65px;
+    padding: 60px;
+    text-align: center;
+    animation: popup 1s ease-out;
+    height: 600px;
+}
+
+@keyframes popup {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+#popup h2 {
+    color: #666;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#popup p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#popup button {
+    background:#0E0047;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+}
+
+#popup button:hover {
+    background:#0E0047;
+    height: 100;
+}
+
+#rayo{
+    position: absolute;
+    margin-top: -250px;
+    height: 200px;
+    margin-left: -20px;
+
+}
+
+#estrella{
+    position: absolute;
+    margin-left: 600px;
+    height: 220px;
+    margin-top: -40px;
+}
+
+#estrella1{
+    position: absolute;
+    margin-top: 260px;
+    height: 220px;
+    margin-left: 150px;
+}
+
+#estrella2{
+    position: absolute;
+    margin-top: 260px;
+    height: 220px;
+    margin-left: 1000px;
+}
+
+#rayo1{
+    position: absolute;
+    margin-top: -500px;
+    height:350px;
+    margin-left: 00px;
+}   
+

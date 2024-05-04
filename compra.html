@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- component -->
+        <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+        <link rel="stylesheet"
+            href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+           
+    
+        <title>Saudade</title>
+    </head>
+    
+    <body class=""></body>
+        
+        <nav id="header" class="w-full z-30 top-10 py-1 bg-[#0E0047] shadow-lg border-b border-blue-400 ">
+            <div class="w-full flex items-center justify-between mt-0 px-6 py-2">
+                <label for="menu-toggle" class="cursor-pointer md:hidden block">
+                    <svg class="fill-current text-blue-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 20 20">
+                        <title>menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </label>
+                <input class="hidden" type="checkbox" id="menu-toggle">
+    
+                <div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
+                    <nav>
+                        <ul class="md:flex items-center justify-between text-base text-white pt-4 md:pt-0">
+                            <li><a class="inline-block no-underline hover:text-[#9333ea]  font-medium text-lg py-2 px-4 lg:-ml-2"
+                                    href="#">Icono</a></li>
+                            <li><a class="inline-block no-underline hover:text-[#9333ea] font-medium text-lg py-2 px-4 lg:-ml-2"
+                                    href="../html/catalogo.html">Inicio</a></li>
+                            <li><a class="inline-block no-underline hover:text-[#9333ea] font-medium text-lg py-2 px-4 lg:-ml-2"
+                                    href="../html/acercade.html">Acerca de Nosotros</a></li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="order-2 md:order-3 flex flex-wrap items-center justify-end mr-0 md:mr-4" id="nav-content">
+                    <div class="auth flex items-center w-full md:w-full">
+                        <button
+                            class="bg-[#3b0764] text-white p-2 rounded border border-gray-300 mr-4 hover:bg-gray-100 hover:text-black">Iniciar sesion
+                            </button>
+                        <button class="bg-[#9333ea] text-gray-200  p-2 rounded  hover:bg-white hover:text-black">Registrarse
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <br>
+    <img id = "camisa" src="../img/CAMISETA.png">
+    
+    <div class="info">
+    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 50px;"> NOMBRE DE LA CAMISA </h1>
+
+    <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">TALLA DE LA PRENDA</h3><hr style="width: 500px;height: 5px; background-color: blueviolet; border: solid ;">
+        <button id="tallas" class="tallas" onclick="seleccionar(this)">S</button>
+        <button id="tallas" class="tallas" onclick="seleccionar(this)">M</button>
+        <button id="tallas" class="tallas" onclick="seleccionar(this)">L</button>
+        <button id="tallas" class="tallas" onclick="seleccionar(this)">XL</button>
+
+        <script>
+            function seleccionar(boton) {
+                var botones = document.querySelectorAll('.tallas');
+                botones.forEach(function(elemento) {
+                    if (elemento === boton) {
+                        elemento.classList.add('seleccionado');
+                    } else {
+                        elemento.classList.remove('seleccionado');
+                    }
+                });
+            }
+        </script>
+        
+        <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">PRECIO DE LA PRENDA</h3><hr style="width: 300px;background-color: blueviolet;">
+        <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 30px; color:#9032bb">COP: 120.000</h2>
+
+        <a href="#"><button class="cc">COMPRAR AHORA</button></a>
+        <a href="#"><button class="cc">AGREGAR AL CARRITO</button></a>
+
+    </div>
+</body>
+</html>
